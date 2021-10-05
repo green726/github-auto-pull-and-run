@@ -1,0 +1,7 @@
+{
+    "repoToClone":"blahblahblah", 
+    "npmInit":true,
+    "portForGithub":9090,
+    "wayToRun":"node",
+    "!!comment":"wayToRun can either be: node.js | python | java - must have these installed on your computer beforehand"
+}
