@@ -6,10 +6,10 @@ let port = parsedConfig.port;
 let fileToRun = parsedConfig.fileToRun;
 console.log(`fileToRun: ${fileToRun}`);
 
-let startServer = require("./languages/" + wayToRun + "Main.js").startServer;
+let startServer = require("../languages/" + wayToRun + "Main.js").startServer;
 
 function reset() {
-    resetFunc = require("./languages/" + wayToRun + "Main.js").reset;
+    resetFunc = require("../languages/" + wayToRun + "Main.js").reset;
     resetFunc();
 }
 
