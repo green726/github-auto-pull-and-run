@@ -18,13 +18,13 @@ Current language support:
 Only support for running js files with node.js exists
 
 Planned language support:
-Java
-C++
-Python
-TypeScript
+Java |
+C++ |
+Python |
+TypeScript |
 C#
 
 In progress:
-Java
-Python
-C++
+Java |
+Python |
+C++ 
