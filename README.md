@@ -12,7 +12,7 @@ Automatically pull github code and run a file from it every time a change is mad
 6. Run the run.bat file to run your code
 7. Done!
 
-#####Thanks for using and/or contributing to this tool!
+##### Thanks for using and/or contributing to this tool!
 
 #### Current language support:
 Only support for running js files with node.js exists
