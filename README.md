@@ -1,5 +1,10 @@
 # github-auto-pull-and-run
+### Description:
 Automatically pull github code and run a file from it every time a change is made on github. 
+
+#### Why would you use this?
+This tool, combined with the github or vscode web editors, allows for no-cost browser development(when combined with something to host your code).
+Example: You only have access to web browser, and have a website running off a node.js server on a computer, using this tool. You can use the github web editor to write code, push it to a github repository, and this tool will automatically pull your latest changes from the repository, and restart you node.js server. 
 
 ### Instructions:
 1. Setup the tool in the config.json file
