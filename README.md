@@ -1,7 +1,7 @@
 # github-auto-pull-and-run
 Automatically pull github code and run a file from it every time a change is made on github. 
 
-Instructions:
+# Instructions:
 1. Setup the tool in the config.json file
   Here you can put in the repository to clone, the language to run, as well as the file you wish to run
 2. Sign into your github account through git(if not already done)
@@ -14,17 +14,17 @@ Instructions:
 
 Thanks for using and/or contributing to this tool!
 
-Current language support:
+# Current language support:
 Only support for running js files with node.js exists
 
-Planned language support:
+# Planned language support:
 Java |
 C++ |
 Python |
 TypeScript |
 C#
 
-In progress:
+# In progress:
 Java |
 Python |
 C++ 
