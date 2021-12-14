@@ -1,5 +1,5 @@
 let fs = require('fs');
-let rawConfig = fs.readFileSync("./config.json").toString();
+let rawConfig = fs.readFileSync("../config.json").toString();
 let parsedConfig = JSON.parse(rawConfig);
 let fileToRun = parsedConfig.fileToRun;
 let child;
@@ -18,7 +18,7 @@ function killChild() {
 
 function startServer() {
   console.log(`python3Main.js: running code from ${fileToRun}`);
-    child = spawn(`cd ./repo && python ${fileToRun} && echo 'python start good'`, {
+    child = spawn(`cd ../repo && python ${fileToRun}.py && echo 'python start good'`, {
         shell: true
       });
     child.stderr.on('data', function (data) {

@@ -1,5 +1,5 @@
 let fs = require('fs');
-let rawConfig = fs.readFileSync("./config.json").toString();
+let rawConfig = fs.readFileSync("../config.json").toString();
 let parsedConfig = JSON.parse(rawConfig);
 let wayToRun = parsedConfig.wayToRun;
 let port = parsedConfig.port;

@@ -1,5 +1,5 @@
 let fs = require('fs');
-let rawConfig = fs.readFileSync("./config.json").toString();
+let rawConfig = fs.readFileSync("../config.json").toString();
 let parsedConfig = JSON.parse(rawConfig);
 let fileToRun = parsedConfig.fileToRun;
 let child;
@@ -18,7 +18,7 @@ function killChild() {
 
 function compileCode() {
     console.log("c++Main.js: compiling code");
-    child = spawnSync(`cd ./repo && g++ ${fileToRun}.cpp && echo 'c++ compile good'`, {
+    child = spawnSync(`cd ../repo && g++ ${fileToRun}.cpp -o ${fileToRun}.exe && echo 'c++ compile good'`, {
         shell: true
     });
     console.log("c++Main.js: compile code done");
@@ -28,7 +28,7 @@ function compileCode() {
 async function startServer() {
     await compileCode();
   console.log(`c++Main.js: running code from ${fileToRun}`);
-    child = spawn(`cd ./repo && ./ ${fileToRun} && echo 'c++ start good'`, {
+    child = spawn(`cd ../repo && ${fileToRun} && echo 'c++ start good'`, {
         shell: true
       });
     child.stderr.on('data', function (data) {

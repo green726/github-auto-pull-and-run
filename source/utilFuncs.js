@@ -20,7 +20,7 @@ function gitClone() {
     if (fs.existsSync('./repo')) {
       fs.rmdirSync("./repo", { recursive: true });
     }
-    clone(repo, "./repo")
+    clone(repo, "../repo")
     console.log("Cloned repo")
     return null;
 }
