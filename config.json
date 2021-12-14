@@ -1,7 +1,7 @@
 {
     "repoToClone":"https://github.com/green726/auto-pull-and-run-test-files.git", 
     "port":9090,
-    "wayToRun":"c++",
+    "wayToRun":"java",
     "fileToRun":"main",
     "!comment":"wayToRun can either be: node | python | java - must have these installed on your computer beforehand - CURRENTLY, ONLY NODE IS SUPPORTED",
     "!comment2":"fileToRun can NOT have the file type in it (ie for server.js just put in server)",

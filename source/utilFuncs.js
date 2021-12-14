@@ -17,8 +17,9 @@ function gitInit(){
 }
 
 function gitClone() {
-    if (fs.existsSync('./repo')) {
-      fs.rmdirSync("./repo", { recursive: true });
+    if (fs.existsSync('../repo')) {
+      fs.rmdirSync("../repo", { recursive: true });
+      console.log("deleted ../repo");
     }
     clone(repo, "../repo")
     console.log("Cloned repo")

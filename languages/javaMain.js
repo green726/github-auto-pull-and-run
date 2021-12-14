@@ -18,7 +18,7 @@ function killChild() {
 
 function compileCode() {
     console.log("javaMain.js: compiling code");
-    child = spawnSync(`cd ../repo && javac ${fileToRun} && echo 'java compile good'`, {
+    let child2 = spawnSync(`cd ../repo && javac ${fileToRun}.java && echo 'java compile good'`, {
         shell: true
     });
     console.log("javaMain.js: compile code done");
