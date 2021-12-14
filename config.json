@@ -1,5 +1,5 @@
 {
-    "repoToClone":"https://github.com/green726/auto-pull-and-run-test-files.git", 
+    "repoToClone":"https://github.com/yourname/yourrepo.git",
     "port":9090,
     "wayToRun":"java",
     "fileToRun":"main",
