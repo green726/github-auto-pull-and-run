@@ -21,16 +21,10 @@ Example: You only have access to web browser, and have a website running off a n
 ##### Thanks for using and/or contributing to this tool!
 
 #### Current language support:
-Only support for running js files with node.js exists
+Node.js | C++ | Java | Python
 
 #### Planned language support:
-Java |
-C++ |
-Python |
-TypeScript |
-C#
+TypeScript | C# | Go
 
 #### In progress:
-Java |
-Python |
-C++ 
+C# | Typescript
