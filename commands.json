@@ -1,28 +1,28 @@
 {
     "node.js": {
         "start": {
-            "1": "cd ../repo && npm i && node fileToRun && echo 'server start good'"
+            "1": "cd ../repo && npm i && node fileToRun && echo 'node.js start successful'"
         }
     },
     "python": {
         "start": {
-            "1": "cd ../repo && python fileToRun.py && echo 'server start good'"
+            "1": "cd ../repo && python fileToRun.py && echo 'python start successful'"
         }
     },
     "java": {
         "compile": {
-            "1": "cd ../repo && javac fileToRun.java && echo 'server compile good'"
+            "1": "cd ../repo && javac fileToRun.java && echo 'java compile successful'"
         },
         "start": {
-            "1": "cd ../repo && java fileToRun.java && echo 'server start good'"
+            "1": "cd ../repo && java fileToRun.java && echo 'java start successful'"
         }
     },
     "c++": {
         "compile": {
-            "1": "cd ../repo && g++ fileToRun.cpp -o fileToRun.exe && echo 'server compile good'"
+            "1": "cd ../repo && g++ fileToRun.cpp -o fileToRun.exe && echo 'c++ compile successful'"
         },
         "start": {
-            "1": "cd ../repo && fileToRun && echo 'server start good'"
+            "1": "cd ../repo && fileToRun && echo 'c++ start successful'"
         }
     }
 
