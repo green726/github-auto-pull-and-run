@@ -1,9 +1,9 @@
 {
-    "repoToClone":"https://github.com/green726/auto-pull-and-run-test-files.git",
+    "repoToClone":"https://github.com/your-name/your-repo.git",
     "port":9090,
-    "wayToRun":"c++",
+    "wayToRun":"c++ or java or python or node",
     "fileToRun":"main",
-    "!comment":"wayToRun can either be: node | python | java - must have these installed on your computer beforehand",
+    "!comment":"wayToRun can either be: node | python | java | c++ - must have these installed on your computer beforehand(for c++ use the gcc compiler, i recommended using mingw - https://sourceforge.net/projects/mingw/files/latest/download)",
     "!comment2":"fileToRun can NOT have the file type in it (ie for server.js just put in server)",
     "!comment3": "port is the port on your computer to run the github update listening server on"
 }
