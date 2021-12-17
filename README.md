@@ -24,7 +24,7 @@ Example: You only have access to web browser, and have a website running off a n
 Node.js | C++ | Java | Python
 
 #### Planned language support:
-TypeScript | C# | Go
+TypeScript | C# | Go | Anything else requested
 
 #### In progress:
 C# | Typescript
