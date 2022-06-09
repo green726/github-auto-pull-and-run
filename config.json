@@ -1,8 +1,8 @@
 {
-    "repoToClone":"https://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@github.com/AstrocoreGames/astrocoreBeta.git",
+    "repoToClone":"",
     "port":9090,
     "wayToRun":"node",
-    "fileToRun":"server",
+    "fileToRun":"main",
     "!comment":"wayToRun can either be: node | python | java | c++ - must have these installed on your computer beforehand(for c++ use the gcc compiler, i recommended using mingw - https://sourceforge.net/projects/mingw/files/latest/download)",
     "!comment2":"fileToRun can NOT have the file type in it (ie for server.js just put in server)",
     "!comment3": "port is the port on your computer to run the github update listening server on"

@@ -1,40 +1,41 @@
 let fs = require('fs')
 let repo = require('./languageControl.js').parsedConfig.repoToClone;
 let spawnSync = require('child_process').spawnSync;
-let clone = require('git-clone');
+const clone = require('git-clone/promise');
 
-function pull(){
-    let child1 = spawnSync('cd ./repo && git pull https://github.com/AstrocoreGames/astrocoreBeta', {
-      shell: true
+function pull() {
+    let child1 = spawnSync('cd ../repo && git pull', {
+        shell: true
     })
 }
-  
-function gitInit(){
-    let child2 = spawnSync('cd ./repo && git init', {
-      shell: true
+
+function gitInit() {
+    let child2 = spawnSync('cd ../repo && git init', {
+        shell: true
     })
     return null;
 }
 
-function gitClone() {
+async function gitClone() {
     if (fs.existsSync('../repo')) {
-      fs.rmdirSync("../repo", { recursive: true });
-      console.log("deleted ../repo");
+        fs.rmdirSync("../repo", { recursive: true });
+        console.log("deleted ../repo");
     }
-    clone(repo, "../repo")
+    fs.mkdirSync("../repo")
+    await clone(repo, "../repo")
     console.log("Cloned repo")
     return null;
 }
 
 function npmInit() {
-    let child3 = spawnSync('cd ./repo && npm i', {
-      shell: true
+    let child3 = spawnSync('cd ../repo && npm i', {
+        shell: true
     })
 
     return null;
 }
 
-module.exports = { 
+module.exports = {
     pull,
     gitInit,
     gitClone,
