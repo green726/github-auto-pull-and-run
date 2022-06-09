@@ -8,7 +8,10 @@ let port = parsedConfig.port;
 let fileToRun = parsedConfig.fileToRun;
 
 let rawCommands = fs.readFileSync("../commands.json").toString();
+
+
 let parsedCommands = JSON.parse(rawCommands);
+
 let commandsArr = []
 
 function initCommands() {
@@ -35,15 +38,15 @@ function run() {
         let child = spawn(command, {
             shell: true
         })
-        child.stderr.on('data', function (data) {
+        child.stderr.on('data', function(data) {
             console.error("Code error:", data.toString());
-          });
-        child.stdout.on('data', function (data) {
+        });
+        child.stdout.on('data', function(data) {
             console.log("Code log:", data.toString());
-          });
-        child.on('exit', function (exitCode) {
+        });
+        child.on('exit', function(exitCode) {
             console.log("Code exited with code: " + exitCode);
-          });
+        });
     }
 }
 
