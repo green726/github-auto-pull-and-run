@@ -1,5 +1,5 @@
 {
-    "node.js": {
+    "node": {
         "start": {
             "1": "cd ../repo && npm i && node fileToRun && echo 'node.js start successful'"
         }
